@@ -1,0 +1,13 @@
+<% if alert %>
+  <%= alert %>
+<% end %>
+
+<%= form_for :login, url: login_index_path, method: :post do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <br>
+  <%= f.submit %>
+<% end %>
